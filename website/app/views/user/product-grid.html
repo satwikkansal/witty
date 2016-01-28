@@ -1,0 +1,25 @@
+ 
+
+<div class="row">
+	<div ng-repeat="product in products |filter:searchQuery|orderBy:predicate" class="col-lg-3 col-md-3 col-sm-4 col-xs-6" ng-show="isSet('All')||isSet(product.category)">
+		<div class="thumbnail product-display" >
+			<a ui-sref="description({pid:product.id})"><img class="
+			productImage" uib-tooltip="Why wait... Just Click the image to view Details" tooltip-popup-delay='1500' tooltip-placement="right" ng-src="{{product.image}}" alt="Product Image">
+				 </a> <div class="caption">
+					<h4 class="pull-right">{{product.price | currency:"&#8377;"}} </h4>
+					<h4>{{product.name}}</h4>
+					<p> {{product.description}} 
+					</p>
+					
+						<div ng-controller="boxPushCtrl" class="input-group input-group-sm">
+							<input ng-model="setPrice" uib-tooltip="Enter the price you are willing to pay" tooltip-trigger="focus" tooltip-enable="!setPrice" tooltip-placement="bottom-left" type="text" class="form-control" placeholder="Rs">
+							<span class="input-group-btn">
+								<button uib-tooltip="Bargain Requested" tooltip-trigger="outsideClick" tooltip-placement="bottom" class="btn btn-default btn-sm bargain-btn" type="button" ng-click="addBid(product,setPrice)">Bargain</button>
+							</span>							
+							<span ng-controller="CartCtrl" class="input-group-btn" ng-click="addItem(product.id,product.name,product.price,1,product.image)">
+							<button uib-tooltip="Added To Cart" tooltip-class="wide" tooltip-trigger="outsideClick" tooltip-placement="bottom-right" class="btn btn-default btn-sm bargain-btn" type="button"> <i class="fa fa-cart-plus fa-2x"></i></button></span>
+							</div>	
+					</div>
+				</div>
+	</div>	</div>		
+	

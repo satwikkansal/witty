@@ -1,0 +1,37 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+
+table{
+	width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+#messages {
+  list-style-type: none;
+  padding:0;
+   margin:0;
+}
+
+#offerBox {
+	padding-top: 25px;
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+@media (min-width:992px) {
+
+    .wrapper {padding-top:70px;}
+    .navbar-static-top {position:fixed;top:0;right:0;left:0;}
+
+}
+
+.striped-table{
+  border-bottom: 1px solid black;
+}

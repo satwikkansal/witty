@@ -1,0 +1,35 @@
+<div>
+	
+	<table class="striped-table table">
+		<caption><center><h2>All Bargains History</h2></center></caption>
+		<tr>
+			<th>Product Name</th>
+			<th>Your Price</th>
+			<th>Status</th>
+			<th>Proposed Value</th>
+			<th>Date Initiated</th>
+			
+			<th ng-show="flag1">Bargain</th>
+		</tr>
+		<tbody ng-repeat="(bidID,bid) in sellerProductBids"> 
+			<tr ng-hide="bid.status===0 || bid.status===2">
+				<td>{{bid.name}} </td>
+				<td>{{bid.price |currency:"&#8377;"}} </td>
+				<td>					
+						<span ng-show="bid.status===-1"><i class="fa fa-cross text-danger"></i><b>You </b>denied the Request </span> 
+					<span ng-show="bid.status===1"><i class="fa fa-check text-success"></i>
+						<b>You</b> Accepted the Bargain, Product Moved To Users Cart</span>
+					<span ng-show="bid.status===3"><i class="fa fa-smile-o text-warning"></i>
+						<b>User</b> Accepted Your Offer, Product Moved To Users Cart</span>
+					<span ng-show="bid.status===4"><i class="fa fa-frown-o text-warning"></i>
+						<b>User</b> Rejected Your Offer</span></td>
+						<td>{{bid.bidValue |currency:"&#8377;"}}</td>
+						<td>{{bid.timestamp |date:'short'}}</td>
+						
+									
+									<td ng-show="flag1">{{bid.price - bid.bidValue |currency:"&#8377;"}} </td>
+								</tr>
+							</tbody>
+						</table></div>	
+						
+	

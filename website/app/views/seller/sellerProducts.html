@@ -1,0 +1,18 @@
+<div>
+	<table class="table table-striped table-hover">
+		<caption><center><h2>Your Products</h2></center></caption>
+		<tr>
+			<th>Product Name</th>			
+			<th>In Cart</th>
+			<th>Bargain Requests</th>			
+		</tr>
+		<tbody> 
+			<tr ng-repeat="product in products">
+				<td>{{product.name}} </td>				
+				<td><b>{{product.inCart}}</b> People have this in cart.<a ng-show="product.inCart" ui-sref="sellerChat({pid:product.id})" class="pull-right"><i class="fa fa-comment"></i>    Text the user</a> </td>
+				<td><b>{{product.numBids}}</b> Bargain Requests are placed on this product.<a ng-show="product.numBids" ui-sref="sellerChat({pid:product.id})" class="pull-right"><i class="fa fa-comment"></i> Text the user</a></td>				
+			</tr>
+		</tbody>
+	</table></div>
+	
+	

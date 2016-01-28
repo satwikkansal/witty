@@ -1,0 +1,39 @@
+ <h4>Let the seller's know what are you looking for</h4><br>
+<mark>Don't find required Product?  <b>shout out loud </b> and the sellers out there will listen to your demand. Just Add the details of the product you need and we'll take care of rest.</mark><br><br>
+ <form role="form" ng-submit="demand(name,category,brand,price,image,msg)">
+  <div class="form-group">
+    <label for="pName"><i class="fa fa-asterisk"></i>
+Name of the Product:</label>
+    <input type="text" class="form-control" id="pName" ng-model="name" required="true"/>
+  </div>
+  <div class="form-group">
+ <label for="category"><i class="fa fa-asterisk"></i>Category:</label>
+  <select class="form-control" id="category" ng-model="category" required="true">
+    <option value="Electronics">Electronics</option>
+    <option value="Sports">Sports</option>
+    <option value="Books">Books</option>
+    <option value="Mobiles">Mobiles And Accessories</option>
+    <option value="Fashion">Fashion</option>
+    <option value="Laptops">Laptops</option>
+  </select>
+</div>
+  <div class="form-group">
+    <label for="pName">Which Brand and Model would you prefer:</label>
+    <input type="text" class="form-control" id="brand" ng-model="brand" placeholder="optional"/>
+  </div>
+  <div class="form-group">
+    <label for="msg">Any Additional Message You wanna convey:</label>
+    <input type="text" uib-tooltip="Like size , color , or the quantities you require." tooltip-trigger="focus" tooltip-placement="top" class="form-control" id="msg" ng-model="msg" placeholder="optional"/>
+  </div>
+  <div class="form-group">
+    <label for="sp"> <i class="fa fa-asterisk"></i>
+What should be the price of the product according to you?</label>
+    <input type="number" min="1" class="form-control" id="sp" ng-model="price"  required="true"/>
+  </div>
+  
+  <div class="form-group">
+      <label for="imgurl">Url of Image</label>
+      <input type="url" class="form-control" id="imgurl" ng-model="image" placeholder="optional"/>
+  </div>  
+  <button type="submit"  class="btn btn-default" uib-tooltip="{{formTooltip}}" tooltip-trigger="click" tooltip-placement="right">Shout </button>
+</form>

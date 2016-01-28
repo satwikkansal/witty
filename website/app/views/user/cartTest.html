@@ -1,0 +1,48 @@
+
+<div  role="alert" ng-show="totalItems.$value=== 0">
+    <img src="images/emptyCart.png" alt="Pushing an empty cart around, huh? <br> Fill that thing up! ">
+</div>
+
+<div class="table-responsive col-lg-12" ng-show="totalItems.$value > 0">
+    
+    <table class="table table-striped cart">
+
+        <thead>
+        <tr> 
+            <th></th>
+            <th></th>
+             <th>Quantity</th>
+            <th>Price</th>
+            <th>Amount</th>
+        </tr>
+        </thead>
+        <tfoot>
+       
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Total:</td>
+            <td class="text-success">{{ total.Value | currency:"&#8377;"}}</td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr ng-repeat="product in cartProducts">
+            <td><span ng-click="removeItem(product.id,product.price*product.quantity)"><i class="fa fa-times text-danger fa-2x"> </i></span></td>
+
+            <td>{{product.name}}</td>
+            <td><span  ng-class="{'disabled':product.quantity==1}"
+                      ng-click="updateQty(product.id,-product.price,-1)"><i class="fa fa-minus text-danger"></i>
+</span>&nbsp;&nbsp;
+                {{ product.quantity | number }}&nbsp;&nbsp;
+                <span  ng-click="updateQty(product.id,product.price,1)"><i class="fa fa-plus text-success"></i>
+</span></td>
+            <td>{{ product.price | currency:"&#8377;"}}</td>
+            <td ng-init="itemTotal = product.price * product.quantity; total.Value = total.Value + itemTotal">{{ product.price * product.quantity | currency:"&#8377;"}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+    

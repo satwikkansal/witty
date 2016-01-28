@@ -1,0 +1,173 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+body {
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}                       
+                                                                                                         
+header {
+  
+  font-size: 16px;
+  background-color: white;  
+  } 
+
+.navbar-brand{
+  font-size: 22px;
+  color: white;
+}
+
+body { font-size: 110%; 
+  
+  padding-top: 120px;
+  }
+
+aside {    
+ /* padding-bottom: 5000px;
+  margin-bottom: -5000px;*/
+  background-color: white;
+  font-size: 1.2em;
+}
+
+.wrapper {
+
+  position: relative;
+  
+  overflow: hidden;
+  
+}
+
+.slide1{
+  background-image: url('/images/congruent_outline.png');
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('/images/congruent_outline.png');
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('/images/congruent_outline.png');
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 4em;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: .4em;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+
+#theCarousel {
+  
+}
+
+
+.product-image {
+  border: 1px solid black;
+}
+
+#messages {
+  list-style-type: none;
+  padding:0;
+   margin:0;
+}
+
+.message-view {
+  padding-top: 25px;
+}
+
+.preloader {
+  height:500px;
+  position: relative;
+  }
+.center-it {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*.product-grid {
+  margin-top: 50px;
+  
+} */
+
+.navbar{
+  background-color: #F05F40;
+  }
+
+  .user-tabs>li>a{
+    color:white;
+    }
+
+    .user-tabs>li>a:hover{
+    background-color:white;
+    color:#008CBA;
+    }
+
+aside>li.active {
+    background-color: #F05F40;
+    color: #fff;
+}
+.thumbnail {
+  border :1px solid #f05f40;
+  height:280px;
+  overflow: auto;
+}
+
+.dropdown {
+  padding-bottom: 20px;
+}
+
+.thumbnail>a>img {
+  height: 120px;
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+ .tooltip .tooltip-inner {
+          color: white;
+         background-color: #F05F40;
+          box-shadow: 0 6px 12px rgba(0,0,0,.175);
+          }
+.tooltip.wide .tooltip-inner {
+  width:100px;
+  
+}
+@media (min-width:992px) {
+
+    body {padding-top:70px;}
+    .navbar-static-top {position:fixed;top:0;right:0;left:0;}
+
+}
+span[ng-click] {
+        cursor: pointer;
+    }
+    .cart .disabled {
+        color:#aaa;
+    }
+    
+    .table-striped th,td{
+      
+      overflow: auto;
+
+      font-size: 1.1em;
+    }

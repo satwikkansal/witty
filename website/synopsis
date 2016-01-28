@@ -1,0 +1,87 @@
+****Project Description***
+ Write about the objective of your hack.
+What you had dreamt of and what you have built.
+Also mention how you plan to improve it beyond the hackathon.
+
+
+Objective: 
+1.Bridging the gap between seller and user 
+2.Increasing competition bw sellers and thereby reducing price
+3.Simulating a real world market like e-commerce where buyers and sellers have more flexibility in terms of prices and products.
+4.Making e-commerce browsing more interactive.
+
+How we came to the idea :
+Today's e-commerce sites are awesome but they miss few important things like -- Seller-User Interaction ,Flexibilities in prices , negotiating , user insights for seller.
+Witty is a step towards making e-commerce more real world like.
+
+Witty is a win-win situation for users and as well as sellers.
+How users benefit?
+1. Users have ability to negotiate with sellers.
+2. Users can clear all their doubts from seller before buying.
+3. Multiple sellers mean a lot of competition ( because sellers will react differently to user's bargain requests.)
+4. Chats are recorded and users can return the product if its not like what the seller promised.
+5. More personalized experience.
+
+How sellers benefit?
+1. We provide a lot of user insights to the seller so they can improve on that and have an edge over other sellers.
+2. Disperency like payment methods are resolve in the chat itself.
+3. We show them what our users are demanding so that they can update their stock accordingly and earn more.
+
+How do we prevent users from not bargainig all the time?
+Basically there are hidden discounts based on the certain criteria for those who are buying directly instead of bargainig. That's why bargaining everytime would not be smart decision.
+
+Lets see how witty is different from developer's point of view
+Everything is realtime , Data is stored as JSON, synced to all connected clients in realtime.
+We have android app and website working out of the box in sync.
+Moreover you will still able to buy if you go offline due to some network problem , witty will store the data for you in queue and will sync them when the network arrives.
+The website is SPA(Single Page Application) which means no reloading of repetitive stuffs which increases the browsing speed.
+
+Features Implemented in this prototype
+Innovative features
+0. Sepereate Interfaces for users and sellers on both android and web platform.
+0.5 We've tried to make it interactive and humorous and certain places by adding dialog boxes and tooltips.
+1. User's ability to bargain and seller's ability to either reject,accept or offer a deal to the user based on the product which user can either accept or reject.
+1.5. Live status of the bargain requests and offers is shown to both the sellers and users and once the bargain request or offer is accepted, prodcut is moved to the cart.
+User Insights:
+2. Seller is able to see product stats like how many users have this particular product in their cart or have bidded on them.
+3. User can demand for a product and sellers can see user demand stats and add the product in their stock accordingly.
+4. User can chat with seller. Seller can also initiate chat with user but only when the user either adds his product to cart or requests a bargain from him.
+5. History of the bids and the chats are recorded and are used to resolve disperancy in future.
+Necessary Features
+6. Searching products , and sorting them by category , price and name.
+7. Add/Remove Items from the cart or update the quantity.
+8. Sorting the bargain requests based on their date, status,name,set price.
+
+How are we going to improvise it beyond the hackathon.
+1. Add support for multiple users and multiple seller to create a real world like scenario.(seller competition, reduced prices , improved quality and servicecs to the users.)
+2. Designing an algorithm to balance the number of users requesting bargains and the users buying directly (like giving the surprise discount , badges when they buy directly ).
+3. Making it more interactive and personalized by linking social media profiles of the users and sellers.
+4. Adding blocking and filtering features so one can get rid of pestering user and seller.
+5. Adding humourous comments and product description so that it feels fun. 
+6. Creating a discussion channel for particular product so that user can clear their doubts by asking to other users and sellers and giving users a reward for each genuine answer they give.
+
+Built With
+Website --
+Front-end : AngularJS , Bootstrap
+Backend : Firebase
+
+Instructions To run
+Website --
+Simply Visit www.bargainhawk.firebaseapp.com 
+1. Open view as Seller in one tab and View as seller on another tab.
+2. Select category , search and sort the results as you want.
+3. If you don't find the product you are looking for , Click Shout Out in the Navigation bar.
+4.  Or if you get desired prodcut try requesting a bargain or add to cart on any product and You'll see the count to be update in navigation bar.
+5. If you requested a bargain You can see at sellers Dashboard an active bargain request.
+6. Try texting the user , offering him , accepting , e.t.c. and see the changes in the bargian status at user's side.
+7. Accept,Deny offers at the user's side and see the changes in the cart.
+8. As a seller view various stats like history , product Insights , user Demands ,e.t.c.
+In case you want to verify if the code is genuine then you can run this in local server on your pc by running the following command in root directory of website.
+npm install
+grunt --force
+grunt serve --force 
+and then visit localhost:9000/ in your browser.
+
+
+
+

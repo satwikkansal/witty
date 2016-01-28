@@ -1,0 +1,61 @@
+	<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Witty - Seller</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+	<link rel="stylesheet" type="text/css" href="styles/seller.css">
+     <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+ 
+  </head>
+</head>
+<body ng-cloak ng-app="sellerApp">
+	<header>
+		<nav class="navbar navbar-static-top navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header col-md-4 col-sm-12">
+					<a class="navbar-brand" href="seller.html">Witty- Seller Portal</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					
+					<li><a href="index.html"><i class="fa fa-sign-out"></i>
+						Sign Out</a></li>
+
+					</ul>
+					
+				</div> <!--container fluid-->
+			</nav>
+		</header>
+		<div class="wrapper fuid-container content">
+			<aside>
+				<div class="col-md-2">
+					<ul ng-init="selectedTab = 'current'" class="nav nav-pills nav-stacked">
+						<center><h3>Options</h3></center>
+						<li ui-sref-active="active"><a ui-sref="sellerBids">Current Bargains</a></li>
+						<li ui-sref-active="active"><a href="#" ui-sref="sellerProducts">Product Stats</a></li>
+						<li ui-sref-active="active"  ui-sref-active="active"><a href="#" ui-sref="sellerHistory" >History</a></li>
+						<li ui-sref-active="active"><a ui-sref="sellerMessages" >Messages</a></li>
+						<li ui-sref-active="active"><a href="#" ui-sref="addProduct" >Add Product</a></li>
+						<li ui-sref-active="active"><a href ui-sref="sellerDemands" >User Demands</a></li>
+					</ul>
+				</div>					
+			</aside>
+				 <div ui-view class="container col-md-10"></div>
+		</div>
+
+  
+ <script src="scripts/lib/packages.js"></script>
+    
+<script src="scripts/lib/ui-bootstrap-tpls.min.js"></script>
+            <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/factories/main.js"></script>
+      
+	</body>
+	</html>

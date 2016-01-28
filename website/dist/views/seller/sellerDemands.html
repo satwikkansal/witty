@@ -1,0 +1,6 @@
+<table class="striped-table table"> <caption><center><h2>User Demands Insights</h2></center></caption> <mark>The products listed are demanded by the users of Witty. If the demand for particular product is more then you can start selling that product and have an competitive edge over other sellers.</mark> <tr> <th>Product <th>Category <th>Brand <th>Image <th>User Comments <th>Expected Price <th>Add To Stock  <tbody ng-repeat="product in userDemands" ng-init="display=1" ng-show="display"> <tr> <td><a href ng-click="display=0" uib-tooltip="Hide this Item" tooltip-placement="bottom"><i class="fa fa-times text-danger"> </i></a> &nbsp;{{product.name}} <td>{{product.category}} <td>{{product.brand}} <td><a href="{{product.image}}" target="productImage" uib-tooltip="Scroll down" tooltip-placement="right" tooltip-trigger="outsideClick">Click To View</a> <td>{{product.comment}} <td>{{product.price}} <td><center><a href ui-sref="addProduct({
+								name:product.brand+' '+product.name,
+								category:product.category,
+								price:product.price,
+								image:product.image
+								})" uib-tooltip="Find it hot? Add to your stock." tooltip-placement="bottom"><i class="fa fa-check text-success fa-2x"> </i></a></center>    </table> <div class="productImage"><iframe src="" name="productImage" frameborder="0" align="middle"> Hello</iframe></div>

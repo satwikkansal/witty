@@ -1,0 +1,30 @@
+<div class="clearfix visible-md-block"></div>
+<div class="container message-view">
+  
+    <ul id="messages" >
+      <h4>Live Chat With User</h4>
+
+      <li ng-repeat="message in messages">
+
+
+        <blockquote>
+          <b><i>@{{message.author}} :</i></b>
+          {{message.message}} <span class="timestamp pull-right"><i>{{ message.timestamp | date:'short' }}</i></span>
+        </blockquote>
+
+      </li><div class="clearfix visible-xs-block"></div>
+    </ul></div>
+
+<div class="enter-message">
+    <form name="messageInput"  ng-submit="addMessage(msgText);msgText=null">
+
+      <fieldset class="form-group">
+        <div class="input-group input-group-sm">
+          <input ng-model="msgText"  class="form-control" placeholder="Start Typing..." title="Message"/> 
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-paper-plane"></i>
+          </span>
+        </div>
+      </fieldset>
+    </form>
+  </div>

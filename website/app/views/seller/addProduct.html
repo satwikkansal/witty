@@ -1,0 +1,38 @@
+ <form role="form" ng-submit="addProduct(name,category,price,image,description,seller)" >
+  <div class="form-group">
+    <label for="pName">Name of the Product:</label>
+    <input type="text" class="form-control" id="pName" ng-model="name" required="true"/>
+  </div>
+  <div class="form-group">
+    <label for="category">Category:</label>
+    <input type="text" class="form-control" id="category" ng-model="category" required="true"/>
+  </div>
+   <div class="form-group">
+ <label for="category">Category:</label>
+  <select class="form-control" id="category" ng-model="category" required="true">
+    <option value="Electronics">Electronics</option>
+    <option value="Sports">Sports</option>
+    <option value="Books">Books</option>
+    <option value="Mobiles">Mobiles And Accessories</option>
+    <option value="Fashion">Fashion</option>
+    <option value="Laptops">Laptops</option>
+  </select>
+</div>
+  <div class="form-group">
+    <label for="description">Brief Description:</label>
+    <input type="text" class="form-control" id="description" ng-model="description" required="true"/>
+  </div>
+  <div class="form-group">
+    <label for="sp">Price to Sell at:</label>
+    <input type="number" min="1" class="form-control" id="sp" ng-model="price" required="true"/>
+  </div>
+  <div class="form-group">
+      <label for="seller">Sold By</label>
+      <input  class="form-control" id="seller" ng-model="seller" required="true"/>
+  </div>  
+  <div class="form-group">
+      <label for="imgurl">Url of Image</label>
+      <input type="url" class="form-control" id="imgurl" ng-model="image" required="true"/>
+  </div>  
+  <button type="submit" class="btn btn-default" uib-tooltip="Product Added!" tooltip-trigger="click" tooltip-placement="right">Add </button>
+</form>
