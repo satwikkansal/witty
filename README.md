@@ -1,3 +1,4 @@
+
 # witty
 
 > A prototype E-commerce platform that aims at simulating real-world market like experience and improving customer experience. Made for IndiaHacks 2016.
@@ -8,6 +9,20 @@ See it live in action https://bargainhawk.firebaseapp.com/
 
 [![vido_thumbnail](https://c1.staticflickr.com/3/2154/2054140257_58e87296b6.jpg)](https://www.youtube.com/watch?v=bYaUbwPRqmw)
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [witty](#witty)
+  - [Update](#update)
+  - [Everybody Bargains](#everybody-bargains)
+  - [Engage Customers](#engage-customers)
+  - [Increase Payout](#increase-payout)
+  - [Story](#story)
+  - [Contributing](#contributing)
+  - [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Update
 This project is based on Firebase leagcy version (which is now deprecated) and no longer maintained. Please follow latest documentation on <https://firebase.google.com> to integrate firebase in your application.
 
